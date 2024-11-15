@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="portfolio-css.css">
+</head>
+<body>
+
+    <header>
+        <img src="OIP.jpg" alt="Imagen de fondo" class="fondo">
+        <div class="banner">
+            <h1>Marcos Soria</h1>
+            <img src="logo batbo.png" alt="Tu logo" style="width: 300px; height: auto;">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cookies" class="cookies">
+        <p>Utilizamos cookies para mejorar tu experiencia. <a href="#">Aceptar</a></p>
+    </div>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="bio-card">
+            <p>Hola, soy Marcos Soria. Estudié en el colegio La purisima valencia y ahora estoy realizando un grado medio de SMR (Sistemas Microinformaticos y Redes) No tengo experiencia laboral pero ganas de hacer y trabajar de lo que me gusta. Me apasiona la informatica y ayudar a la gente que no tiene tanta idea.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" class="social-icon"><img src="facebook-logo-1-2.png" alt="Facebook"></a>
+            <a href="https://x.com/home" class="social-icon"><img src="X-Logo.jpg" alt="Twitter"></a>
+            <a href="https://es.linkedin.com/" class="social-icon"><img src="linkedIn_PNG7.png" alt="LinkedIn"></a>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="gallery">
+            <div class="project-card">
+                <img src="TrueNAS-Open-Storage-Logo.webp" alt="Proyecto 1">
+                <h3>True NAS</h3>
+                <p>Tengo que configurar un servidor NAS con TrueNAS para tener un almacenamiento seguro y compartido. Tendrás que configurar el hardware, el software y crear un usuario para acceder a tus archivos.</p>
+            </div>
+            <div class="project-card">
+                <img src="servidores.jpg" alt="Proyecto 2">
+                <h3>Proyecto CPD</h3>
+                <p>En este proyecto cree un plano 3D de un edificio en el cual tenia que justificar y crear medidas de seguridad para cada planta.</p>
+            </div>
+            <div class="project-card">
+                <img src="DRones.jpg" alt="Proyecto 3">
+                <h3>Creacion de empresa</h3>
+                <p>En este trabajo tenia que creear una empresa ficticia y que fuera original asi que cree una empresa  de reparto de paquetes con drones la empresa tenia que ser original .</p>
+            </div>
+            <div class="project-card">
+                <img src="blackbox-ai-programmation-intelligence-artificielle.png" alt="Proyecto 2">
+                <h3>Blackbox</h3>
+                <p>En este trabajo tenia que utilizar la IA de blackbox para crear un codigo, una IA muy util ya que te permite utilizar una funcion que permite que la IA lea tu codigo para crear mejor tu codigo.</p>
+            </div>
+            <div class="project-card">
+                <img src="trabajo dominio.jpg" alt="Proyecto 2">
+                <h3>Dominio VS Grupo Trabajo</h3>
+                <p>En este proyecto grupal teniamos que hacer un debate entre que es mas rentable, util,costoso etc.. Sobre el grupo de trabajo o el dominio.</p>
+            </div>
+            <div class="project-card">
+                <img src="analisis-dafo.jpg" alt="Proyecto 2">
+                <h3>Analisis DAFO</h3>
+                <p>En este trabajo tenia que hacer un analisis DAFO de mi mismo lo cual me sirvio mucho para poder identificar mis debilidades, oportunidades, fortalezas y amenazas.</p>
+            </div>
+            <!-- Agrega más tarjetas de proyectos según sea necesario -->
+        </div>
+    </section>
+    <div class="metric-container">
+        <h2>Seccion de habilidades</h2>
+        <div class="metric">
+            <div class="metric-label">HTML</div>
+            <div class="metric-bar html-bar"></div>
+        </div>
+        <div class="metric">
+            <div class="metric-label">CSS</div>
+            <div class="metric-bar css-bar"></div>
+        </div>
+    </div>
+  
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Quieres trabajar conmigo? ¡Hablemos!</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+        
+       
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>© 2024 Marcos Soria</p>
+    </footer>
+</body>
+</html>

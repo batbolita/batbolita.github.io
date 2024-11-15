@@ -1,0 +1,271 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Fondo claro y fresco */
+    color: #333; /* Texto oscuro */
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.fondo {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.7); /* Oscurece un poco la imagen de fondo */
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre elementos */
+}
+
+nav ul li {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ffccbc; /* Fondo color durazno claro */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+nav ul li:hover {
+    background-color: #ffab91; /* Efecto hover más claro */
+}
+
+.cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco suave */
+    color: #333; /* Texto oscuro */
+    padding: 1px;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff3e0; /* Fondo de sección color melón claro */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px; /* Margen entre secciones */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff7043; /* Color de texto para encabezados */
+}
+
+section p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5em; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú vertical en móviles */
+    }
+
+    nav ul li {
+        margin-bottom: 10px; /* Espacio entre elementos del menú */
+    }
+}
+/* Estilos para la tarjeta de biografía */
+.bio-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo suave */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado externo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-icons {
+    margin-top: 15px; /* Espaciado superior */
+}
+
+.social-icon {
+    margin-right: 10px; /* Espaciado entre íconos */
+    display: inline-block; /* Permite aplicar estilos a los enlaces */
+}
+
+.social-icon img {
+    width: 50px; /* Ajusta el tamaño del ícono */
+    height: auto; /* Mantiene la proporción */
+    transition: filter 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Cambio de color al pasar el ratón */
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(100%) saturate(0%) hue-rotate(178deg) brightness(100%) contrast(101%); /* Cambia el color del ícono */
+}
+/* Estilos para la galería de proyectos */
+.gallery {
+    display: grid; /* Usa grid para organizar las tarjetas */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Crea columnas responsivas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos para cada tarjeta de proyecto */
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    text-align: center; /* Centra el texto */
+}
+
+.project-card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados en la imagen */
+}
+
+.project-card h3 {
+    margin: 10px 0; /* Espaciado superior e inferior del título */
+    font-size: 1.2em; /* Tamaño del texto del título */
+}
+
+.project-card p {
+    font-size: 0.9em; /* Tamaño del texto de la descripción */
+    color: #666; /* Color del texto de la descripción */
+}
+.metric-container {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px; /* Espacio adicional si es necesario */
+}
+.metric {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.metric-label {
+    width: 50px;
+    text-align: right;
+    margin-right: 10px;
+}
+.metric-bar {
+    flex-grow: 1;
+    height: 30px;
+    border-radius: 5px;
+}
+.html-bar {
+    background-color: #E44D26; /* Color de HTML */
+    width: 70%; /* Ajusta el ancho según la métrica deseada */
+}
+.css-bar {
+    background-color: #1572B6; /* Color de CSS */
+    width: 50%; /* Ajusta el ancho según la métrica deseada */
+}
+/* Estilos para el formulario de contacto */
+#contacto {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+/* Mensaje llamativo */
+#contacto p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Fondo oscuro para el pie de página */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Asegura que esté al final de la página */
+    width: 100%; /* Ocupa todo el ancho */
+    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+}
+
+footer p {
+    margin: 0; /* Eliminar márgenes */
+    font-size: 14px; /* Tamaño de fuente */
+}
